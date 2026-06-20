@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "VITE_CODESPACE_NAME=$CODESPACE_NAME vite",
+    "build": "tsc && VITE_CODESPACE_NAME=$CODESPACE_NAME vite build",
+    "preview": "VITE_CODESPACE_NAME=$CODESPACE_NAME vite preview"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
